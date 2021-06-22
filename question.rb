@@ -3,8 +3,6 @@ class Question
   def initialize
     @first_number = rand(1..20)
     @second_number = rand(1..20)
-    puts @first_number
-    puts @second_number
   end
 
   def ask
