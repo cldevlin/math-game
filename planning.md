@@ -2,7 +2,8 @@
 
 ## Task 1: Extract Nouns for Classes
 - Player
-- Game
+- Match
+- Question
 <!-- - Turn -->
 
 
@@ -14,25 +15,35 @@ States:
 - number of lives left
 
 Methods:
-- lose a life
+- subtract a life
 
 Initialize:
 - 3 lives
 - name (1 or 2)
 
-### Game
+### Match
 States:
 - whose turn is it
 - is there a winner
 
 Methods:
-- game loop -> (question -> response -> print scores)
+- game loop -> (question -> check response -> print correct or not -> print scores...)
 - Next turn
-- generate numbers 
+<!-- - generate numbers  -->
 - print current score(get from Players)
 - declare winner
 
 Initialize
 - Player 1's turn
 - print question to the console
+
+### Question
+States:
+- current numbers?
+
+Methods:
+- generate two random numbers between 1 and 20, return 
+- return correct answer
+
 <!-- ### Turn -->
+
